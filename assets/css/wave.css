@@ -1,0 +1,127 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+    overflow: hidden;
+}
+
+section .wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1
+{
+    animation: animate 5s linear infinite;
+    z-index: 1000;
+    opacity: 0.7;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2
+{
+    animation: animate2 5s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: 0s;
+    bottom: -10px;
+}
+
+section .wave.wave3
+{
+    animation: animate3 2s linear infinite;
+    z-index: 998;
+    opacity: 0.25;
+    animation-delay: 0s;
+    bottom: -20px;
+}
+
+section .topwave
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/topwave.png);
+    background-size: 1000px 100px;
+}
+
+section .topwave.topwave1
+{
+    animation: animate 5s linear infinite;
+    z-index: 996;
+    opacity: 0.7;
+    animation-delay: 0s;
+    top: 0;
+}
+
+section .topwave.topwave2
+{
+    animation: animate2 5s linear infinite;
+    z-index: 995;
+    opacity: 0.5;
+    animation-delay: 0s;
+    top: -10px;
+}
+
+section .topwave.topwave3
+{
+    animation: animate3 2s linear infinite;
+    z-index: 994;
+    opacity: 0.25;
+    animation-delay: 0s;
+    top: -20px;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+}
+
+@keyframes animate3
+{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
