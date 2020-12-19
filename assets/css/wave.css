@@ -89,6 +89,12 @@ section .topwave.topwave3
     top: -20px;
 }
 
+section .tuto
+{
+    top: -10px;
+    left: 10px;
+}
+
 
 @keyframes animate
 {
