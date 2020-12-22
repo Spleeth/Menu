@@ -665,17 +665,21 @@ body {
 
 
 
-/* .wrap__sparks {
+.wrap__sparks {
   transform: translateZ(-100px);
-} */
+}
 
+.tuto
+{
+    left: 10px;
+}
 
-/* h1 {
+h1 {
   font-size: 24px;
   display: block;
   text-align: center;
   color: #6a11cb;
   font-weight: 500;
-} */
+}
 
 
